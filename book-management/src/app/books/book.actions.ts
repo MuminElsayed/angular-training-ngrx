@@ -4,11 +4,11 @@ import { Book } from '../models/book';
 export const AddBook = createAction('[Book] Add Book', props<Book>());
 
 export const AddBookSuccess = createAction(
-  '[Book] Edit Book Success',
-  props<Book>
+  '[Book] Add Book Success',
+  props<Book>()
 );
 export const AddBookFailure = createAction(
-  '[Book] Edit Book Failure',
+  '[Book] Add Book Failure',
   props<{ error: any }>()
 );
 
